@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Dress Transition Store</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f7f7f7;
+    }
+
+    .navbar {
+        background: black;
+        color: white;
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navbar h1 {
+        margin: 0;
+        font-size: 22px;
+    }
+
+    .navbar ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+    }
+
+    .hero {
+        background: url('https://images.pexels.com/photos/291762/pexels-photo-291762.jpeg') center/cover;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+
+    .hero h2 {
+        font-size: 38px;
+        background: rgba(0,0,0,0.5);
+        padding: 15px;
+    }
+
+    .products {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 20px;
+        padding: 30px;
+    }
+
+    .card {
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .card img {
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+    }
+
+    .info {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .price {
+        color: green;
+        font-weight: bold;
+    }
+
+    button {
+        background: black;
+        color: white;
+        padding: 10px;
+        width: 100%;
+        border: none;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: #333;
+    }
+
+    footer {
+        background: black;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+    <h1>Dress Transition</h1>
+    <ul>
+        <li>Home</li>
+        <li>Shop</li>
+        <li>New</li>
+        <li>Contact</li>
+    </ul>
+</div>
+
+<div class="hero">
+    <h2>Stylish Dresses for Every Occasion</h2>
+</div>
+
+<div class="products">
+
+    <div class="card">
+        <img src="https://images.pexels.com/photos/985635/pexels-photo-985635.jpeg">
+        <div class="info">
+            <h3>Elegant Red Dress</h3>
+            <p class="price">$49.99</p>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg">
+        <div class="info">
+            <h3>Summer Floral Dress</h3>
+            <p class="price">$39.99</p>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://images.pexels.com/photos/1381558/pexels-photo-1381558.jpeg">
+        <div class="info">
+            <h3>Party Black Dress</h3>
+            <p class="price">$59.99</p>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://images.pexels.com/photos/1454171/pexels-photo-1454171.jpeg">
+        <div class="info">
+            <h3>Casual White Dress</h3>
+            <p class="price">$29.99</p>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://images.pexels.com/photos/1536619/pexels-photo-1536619.jpeg">
+        <div class="info">
+            <h3>Modern Style Dress</h3>
+            <p class="price">$44.99</p>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://images.pexels.com/photos/1755428/pexels-photo-1755428.jpeg">
+        <div class="info">
+            <h3>Luxury Evening Dress</h3>
+            <p class="price">$79.99</p>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div
