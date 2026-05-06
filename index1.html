@@ -18,17 +18,14 @@
         padding: 15px;
         display: flex;
         justify-content: space-between;
-    }
-
-    .navbar h1 {
-        margin: 0;
-        font-size: 22px;
+        align-items: center;
     }
 
     .navbar ul {
         list-style: none;
         display: flex;
         gap: 20px;
+        margin: 0;
     }
 
     .hero {
@@ -121,7 +118,7 @@
         <div class="info">
             <h3>Elegant Red Dress</h3>
             <p class="price">$49.99</p>
-            <button onclick="addToCart()">Add to Cart</button>
+            <button onclick="addToCart('Elegant Red Dress')">Add to Cart</button>
         </div>
     </div>
 
@@ -130,7 +127,7 @@
         <div class="info">
             <h3>Summer Floral Dress</h3>
             <p class="price">$39.99</p>
-            <button onclick="addToCart()">Add to Cart</button>
+            <button onclick="addToCart('Summer Floral Dress')">Add to Cart</button>
         </div>
     </div>
 
@@ -139,7 +136,7 @@
         <div class="info">
             <h3>Party Black Dress</h3>
             <p class="price">$59.99</p>
-            <button onclick="addToCart()">Add to Cart</button>
+            <button onclick="addToCart('Party Black Dress')">Add to Cart</button>
         </div>
     </div>
 
@@ -148,7 +145,7 @@
         <div class="info">
             <h3>Casual White Dress</h3>
             <p class="price">$29.99</p>
-            <button onclick="addToCart()">Add to Cart</button>
+            <button onclick="addToCart('Casual White Dress')">Add to Cart</button>
         </div>
     </div>
 
@@ -157,7 +154,7 @@
         <div class="info">
             <h3>Modern Style Dress</h3>
             <p class="price">$44.99</p>
-            <button onclick="addToCart()">Add to Cart</button>
+            <button onclick="addToCart('Modern Style Dress')">Add to Cart</button>
         </div>
     </div>
 
@@ -166,5 +163,21 @@
         <div class="info">
             <h3>Luxury Evening Dress</h3>
             <p class="price">$79.99</p>
-            <button onclick="addToCart()">Add to Cart</button>
-        </div
+            <button onclick="addToCart('Luxury Evening Dress')">Add to Cart</button>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 Dress Transition Store</p>
+</footer>
+
+<script>
+function addToCart(productName) {
+    alert(productName + " added to cart!");
+}
+</script>
+
+</body>
+</html>
